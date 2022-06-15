@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>Cool Creasu</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </header>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>Cool Creasu</h1>
+                <h2>A website for cool people</h2>
+            </div>
+            <div class="content">
+                <h2>About</h2>
+                <p>
+                    This is a website for cool people.
+                </p>
+                <h2>Contact</h2>
+                <p>
+                    Email: <a href="mailto:
+                    <?php
+                        echo $email;
+                    ?>
+                    ">
+                    <?php
+                        echo $email;
+                    ?>
+                    </a>
+                </p>
+                <p>
+                    Phone: <?php
+                        echo $phone;
+                    ?>
+                </p>
+                <p>
+                    Address: <?php
+                        echo $address;
+                    ?>
+                </p>
+            </div>
+            <div class="footer">
+                <p>
+                    &copy; <?php
+                        echo $year;
+                    ?>
+                    Cool Creasu
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
