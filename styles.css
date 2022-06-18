@@ -1,3 +1,44 @@
+/*
+* {
+    /* for all elements 
+    box-sizing: border-box;
+}
+/* Color theme and variables 
+:root {
+    --accent-color: #ffc107;
+    --header-color: #343a40;
+    --paragraph-color: #212529;
+    --ease: all 0.4s ease;
+    --radius: 6px;
+}
+
+body {
+    margin: 0;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    color: var(--header-color);
+    padding: 0px, 20px;
+    background-color: darkgray;
+}
+
+/* for all icons 
+.icon{
+    width: 24px;
+    height: 24px;
+    margin: 0px 3px;
+}
+
+/* to apply colors 
+.icon {
+    width: 24px;
+    height: 24px;
+    margin: 0px 3px;
+}
+
+/* to apply colors 
+.accentColor {
+    color: var(--accent-color);
+}
 header
 {
     background-color: #f1f1f1;
@@ -5,12 +46,8 @@ header
     text-align: center;
 }
 
-body{
-    background-color: #f1f1f1;
-}
-
 footer{
-    background-color: rgb( 25, 55, 75);
+    background-color: rgb( 32, 152, 152);
     padding: 20px;
     text-align: center;
 }
@@ -35,4 +72,134 @@ h2{
 p{
     text-align: center;
     font-family: serif;
+}
+*/
+*{
+    /* for all elements */
+    box-sizing: border-box;
+}
+
+/* color theme and variables */
+:root {
+    --accent-color: #ad3869;
+    --header-color: #444444;
+    --paragraph-color: #626262;
+    --ease: all 0.4s ease;
+    --radius: 6px;
+}
+
+body {
+    margin: 0;
+    padding: 0px;
+    font-family: 'Inter', sans-serif;
+    color: var(--header-color);
+    padding: 0px 20px;
+    background-color: #fffafa;
+}
+
+/* for all icons */
+.icon {
+    width: 24px;
+    height: 24px;
+    margin: 0px 3px;
+}
+
+/* to apply colors */
+.accentColor {
+    color: var(--accent-color);
+}
+
+.paragraphColor {
+    color: var(--paragraph-color);
+}
+
+a {
+    color: var(--header-color);
+    /* remove the default underlining */
+    text-decoration: none;
+}
+
+/* to center elements */
+.centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* to group sections and margins */
+section {
+    margin: 150px 0px;
+}
+
+/* for background images */
+.backgroundFix {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* to create total seperation between elements */
+.flex-space-btw {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* to apply equal spacing between elements */
+.grid2,
+.grid3 {
+    display: grid;
+    /* place in twos */
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.grid3 {
+    /* place in three */
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* to create a seperation between in-line elements */
+.flex-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* wrap around elements and space on both sides. */
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* for a fancy scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+/* scroll bar track*/
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--accent-color);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--header-color);
+}
+
+.padChild {
+    padding: 25px;
 }
